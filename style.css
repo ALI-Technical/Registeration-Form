@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://media4.giphy.com/media/2tNvsKkc0qFdNhJmKk/giphy.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transition: 1s; */
+}
+.black-body{
+    background: linear-gradient(245deg, #3a3737, rgba(3, 3, 3, 0.541), gray);
+    color: #fff;
+}
+.dark-mode i{
+    font-size: 2em;
+    cursor: pointer;
+}
+.container{
+    max-width: 700px !important;
+    width: 100% !important;
+    background: #fff !important;
+    padding: 25px 30px !important;
+    border-radius: 10px !important;
+}
+.container-2{
+    background: linear-gradient(245deg, rgba(10, 119, 221, 0.856), rgb(105, 138, 211)) !important;
+}
+.container .title{
+    display: flex !important;
+    justify-content: space-between !important;
+    font-size: 25px !important;
+    font-weight: bolder !important;
+    position: relative !important;
+}
+.main-heading::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 15%;
+    background: linear-gradient(245deg, lightblue, royalblue);
+    left: 0;
+    top: 0;
+}
+.main-heading-2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 15%;
+    background: linear-gradient(245deg, #3a3737, #ccc);
+    left: 0;
+    top: 0;
+}
+.container form .user-details{
+    /* border: 1px solid salmon; */
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+}
+form .user-details .input-box{
+    /* border: 1px solid blue; */
+    width: calc(100% / 2 - 20px);
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box input{
+    border: 1px solid #ccc;
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 3px;
+    transition: all 0.3s ease;
+}
+.user-details .input-box .details{
+    /* border: 1px solid black; */
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+    border-color: #9b59b6;
+}
+.gender-details{
+    display: flex;
+    flex-direction: column;
+}
+.gender-details span{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+.gender-details label{
+    /* border: 1px solid black; */
+    font-size: 18px;
+}
+.radios{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 2px solid black; */
+    width: 100%;
+}
+.myBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.myBtn input{
+    width: 100%;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    background-image: url(https://media4.giphy.com/media/2tNvsKkc0qFdNhJmKk/giphy.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.myBtn input:hover{
+    background: linear-gradient(-245deg, #6999de, royalblue);
+}
+#btn-2{
+    background: linear-gradient(245deg, #3a3737, rgba(3, 3, 3, 0.541), gray);
+}
+#btn-2:hover{
+    background: linear-gradient(-245deg, #3a3737, rgba(3, 3, 3, 0.541), gray);
+}
+.password-box{
+    /* border: 1px solid red; */
+    position: relative;
+}
+.password-box i{
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    cursor: pointer;
+}
+.confm-pass-box{
+        /* border: 1px solid red; */
+        position: relative;
+}
+.confm-pass-box i{
+    position: absolute;
+    right: 5%;
+    bottom: 20%;
+    cursor: pointer;
+}
+@media (max-width: 584px) {
+    .container{
+        max-width: 100% !important;
+    }
+    form .user-details .input-box{
+        width: 100%;
+        margin: 20px 0 12px 0;
+    }
+    .container form .user-details{
+        max-height: 300px !important;
+        overflow-y: scroll !important;
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+}
